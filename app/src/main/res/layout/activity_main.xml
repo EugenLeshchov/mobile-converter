@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eugen.leshchov.by.currencyconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/labelRUB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="236dp"
+        android:text="@string/rub"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/rubOutput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelEUR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/eur"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/eurOutput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="356dp"
+        android:text="@string/usd"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/usdOutput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/currencyBY"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="@string/hint_currency"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rubOutput"
+        android:layout_width="168dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/labelRUB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelRUB"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/eurOutput"
+        android:layout_width="167dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_style"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/labelEUR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelEUR"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/usdOutput"
+        android:layout_width="166dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/labelUSD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelUSD"
+        tools:ignore="LabelFor" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="hint_currency">Enter the currency(BYN)</string>
+    <string name="rub">RUB</string>
+    <string name="eur">EUR</string>
+    <string name="usd">USD</string>
+    <string name="convert">Convert</string>
+</resources>
